@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Box from "@mui/material/Box";
-// import { shadows } from '@mui/system';
 
 function Item(props) {
   const { sx, ...other } = props;
@@ -26,9 +25,6 @@ function Item(props) {
   );
 }
 Item.propTypes = {
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
   sx: PropTypes.oneOfType([
     PropTypes.arrayOf(
       PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool])

@@ -17,7 +17,6 @@ import FormControl from "@mui/material/FormControl";
 import CurrencyRupeeSharpIcon from "@mui/icons-material/CurrencyRupeeSharp";
 import ManageAccountsSharpIcon from "@mui/icons-material/ManageAccountsSharp";
 import "../css/AddExpenses.css";
-// import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -90,7 +89,7 @@ export default function Addexpense(props) {
     // console.log(expenseData);
     props.onAddExpense(expenseData);
     setDate("");
-    setTitle("");
+    setTitle(""); 
     setAmount("");
   };
   // let Today = new Date(2022, 9, 16);

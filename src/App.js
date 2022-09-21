@@ -5,7 +5,6 @@ import ExpenseDetail from "./components/js/expenseDetail";
 import ExpenseFilter from "./components/js/expenseFilter";
 import Alert from "@mui/material/Alert";
 import ExpenseChart from "./components/js/expenseChart";
-// import Stack from '@mui/material/Stack';
 
 const DUMMY_EXPENSE = [
   {
@@ -48,7 +47,7 @@ function App() {
     setYear(year);
     console.log(Year);
   };
-  // console.log(expenses.date);
+
   const filteredExpenses = expenses.filter((expense) => {
     // return expense.date.getFullYear() === parseInt(Year);
     if (Year === "All") {
@@ -57,8 +56,6 @@ function App() {
       return expense.date.getFullYear() === parseInt(Year);
     }
   });
-
-  // console.log(DUMMY_EXPENSE[0].date.toLocaleDateString());
 
   let expenseContent = (
     <Alert
